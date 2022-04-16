@@ -1,0 +1,146 @@
+#get-in-touch-section {
+    background-color: $white;
+
+    .get-the-app-today-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        #get-the-app-today-btn {
+            background: linear-gradient(#fe7270, #f6397d);
+            padding: 20px 40px;
+            color: #fff;
+            font-weight: 600;
+            margin-top: -30px;
+            position: absolute;
+            font-size: 16px;
+        }
+    }
+
+    .get-in-touch-container {
+        display: grid;
+        row-gap: 40px;
+        padding: 40px 100px;
+
+
+        .get-in-touch-container1 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 100px 40px;
+            padding: 80px 200px;
+            justify-items: center;
+
+            .company,
+            .development,
+            .community,
+            .info {
+
+                .company-title,
+                .development-title,
+                .community-title,
+                .info-title {
+                    font-size: 16px;
+                }
+
+                ul {
+                    margin-top: 15px;
+
+                    li {
+                        a {
+                            color: $black;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .get-in-touch-container2 {
+            display: grid;
+            row-gap: 30px;
+            justify-content: center;
+            text-align: center;
+
+            .get-in-touch-container2-form {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+
+                .message-input {
+                    width: 100%;
+                    height: 40px;
+                    background-color: $second-color;
+                    border: none;
+                }
+
+                .count-me-in-btn {
+                    background-color: $first-color;
+                    color: $black;
+                    border: none;
+                    padding: 5px 20px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    width: 100%;
+                    height: 40px;
+                    max-width: 140px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #get-in-touch-section {
+        .get-in-touch-container {
+            padding: 80px 80px;
+
+            .get-in-touch-container1 {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                padding: 40px 40px;
+                text-align: center;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 792px) {
+    #get-in-touch-section {
+        .get-the-app-today-container {
+
+            #get-the-app-today-btn {
+                padding: 15px 30px;
+                margin-top: -1rem;
+            }
+        }
+
+        .get-in-touch-container {
+            padding: 80px 20px;
+
+            .get-in-touch-container1 {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 40px 20px;
+            }
+
+            .get-in-touch-container2 {
+
+                .get-in-touch-container2-title {
+                    font-size: 30px;
+                }
+
+                .get-in-touch-container2-p {
+                    text-align: center;
+                }
+
+                .get-in-touch-container2-form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

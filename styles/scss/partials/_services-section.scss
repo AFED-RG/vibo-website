@@ -1,0 +1,119 @@
+#services-section {
+    background-color: $second-color;
+
+    .services-container {
+        padding: 0 100px 130px 100px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-items: center;
+        gap: 2rem 4rem;
+
+
+        .smartphone-container {
+            img {
+                width: 100%;
+            }
+        }
+
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            position: relative;
+
+            .services-item {
+                background-color: $white;
+                box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+                padding: 40px 20px;
+                width: 100%;
+                max-width: 250px;
+                height: 100%;
+                text-align: center;
+                transition: all 0.5s ease-in-out;
+
+                .services-icon {
+                    img {
+                        width: 100%;
+                        max-width: 45px;
+                        margin-top: 30px;
+                    }
+                }
+
+                .services-title {
+                    h1 {
+                        font-size: 16px;
+                        margin-top: 20px;
+                    }
+                }
+
+                .services-desc {
+                    p {
+                        margin-top: 20px;
+                    }
+                }
+
+                &:nth-child(1),
+                &:nth-child(2) {
+                    margin-left: 40px;
+                }
+
+                &:nth-child(1),
+                &:nth-child(3) {
+                    margin-top: -60px;
+                }
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #services-section {
+
+        .services-container {
+            grid-template-columns: 1fr;
+
+            .smartphone-container {
+                display: none;
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (max-width: 792px) {
+    #services-section {
+
+        .services-container {
+            padding: 0 40px 130px 40px;
+
+            .smartphone-container {
+                display: none;
+            }
+
+            .services-list {
+                display: grid;
+                grid-template-columns: 1fr;
+                margin-top: 40px;
+
+                .services-item {
+
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                        margin-left: 0;
+                    }
+
+                    &:nth-child(1),
+                    &:nth-child(3) {
+                        margin-top: 0;
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import "./partials/global-variabes";
+@import "./partials/header-section";
+@import "./partials/hero-section";
+@import "./partials/services-section";
+@import "./partials/stable-and-ready-section";
+@import "./partials/everything-you-need-section";
+@import "./partials/dl-links-section";
+@import "./partials/get-in-touch-section";
+@import "./partials/footer-section";
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.links-btn {
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.h1-title {
+    font-size: 35px;
+}
+
+p {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.25rem;
+}
+
+#hero-section,
+#services-section,
+#s-a-r-section,
+#ev-y-n-section,
+#dl-links-section,
+#get-in-touch-section,
+#footer-section {
+    width: 100%;
+}
