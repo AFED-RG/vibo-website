@@ -495,7 +495,7 @@
 }
 
 #dl-links-section {
-  background-image: url("../assets/images/main-background.jpg");
+  background-image: url("/vibo-website/assets/images/main-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
