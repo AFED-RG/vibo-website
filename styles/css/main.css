@@ -141,7 +141,7 @@
 }
 
 #hero-section {
-  background-image: url("/./assets/images/main-background.jpg");
+  background-image: url("vibo-website/assets/images/main-background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
